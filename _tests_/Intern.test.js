@@ -12,11 +12,11 @@ test("Can instantiate Intern with constructor arguements", () =>{
 test("Can get school via getSchool()", () => {
     const intern = new Intern("Reggie", 1, "reggie@reggie.com", "SDSU");
 
-    expect.name(intern.getSchool()).toBe("SDSU");
+    expect(intern.getSchool()).toBe("SDSU");
 });
 
 test("Can get role via getRole()", () => {
     const intern = new Intern("Reggie", 1, "reggie@reggie.com", "SDSU");
 
-    expect.name(intern.getGithub()).toBe("Intern");
+    expect(intern.getRole()).toBe("Intern");
 });

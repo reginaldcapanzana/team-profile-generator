@@ -11,23 +11,23 @@ test("Can instantiate Employee with constructor arguements", () =>{
 test("Can get name via getName()", () => {
     const employee = new Employee("Reggie", 1, "reggie@reggie.com");
 
-    expect.name(employee.getName()).toBe("Reggie");
+    expect(employee.getName()).toBe("Reggie");
 });
 
 test("Can get id via getId()", () => {
     const employee = new Employee("Reggie", 1, "reggie@reggie.com");
 
-    expect.name(employee.getId()).toBe(1);
+    expect(employee.getId()).toBe(1);
 });
 
 test("Can get email via getEmail()", () => {
     const employee = new Employee("Reggie", 1, "reggie@reggie.com");
 
-    expect.name(employee.getEmail()).toBe("reggie@reggie.com");
+    expect(employee.getEmail()).toBe("reggie@reggie.com");
 });
 
 test("Can get role via getRole()", () => {
     const employee = new Employee("Reggie", 1, "reggie@reggie.com");
 
-    expect.name(employee.getName()).toBe("Employee");
+    expect(employee.getRole()).toBe("Employee");
 });

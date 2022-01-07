@@ -12,11 +12,11 @@ test("Can instantiate Engineer with constructor arguements", () =>{
 test("Can get github username via getGithub()", () => {
     const engineer = new Engineer("Reggie", 1, "reggie@reggie.com", "regGithub");
 
-    expect.name(engineer.getGithub()).toBe("regGithub");
+    expect(engineer.getGithub()).toBe("regGithub");
 });
 
 test("Can get role via getRole()", () => {
     const engineer = new Engineer("Reggie", 1, "reggie@reggie.com", "regGithub");
 
-    expect.name(engineer.getGithub()).toBe("Engineer");
+    expect(engineer.getRole()).toBe("Engineer");
 });
