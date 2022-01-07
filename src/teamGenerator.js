@@ -1,7 +1,6 @@
 const teamGenerator = team => {
     const genManager = manager => {
-        return
-        `
+        return `
         <div class="card">
             <div class="card-header">
                 <h2>${manager.getName()}</h2>
@@ -18,8 +17,7 @@ const teamGenerator = team => {
         `;
     };
     const genEngineer = engineer => {
-        return
-        `
+        return `
         <div class="card">
             <div class="card-header">
                 <h2>${engineer.getName()}</h2>
@@ -36,8 +34,7 @@ const teamGenerator = team => {
         `;
     };
     const genIntern = intern => {
-        return
-        `
+        return `
         <div class="card">
             <div class="card-header">
                 <h2>${intern.getName()}</h2>
@@ -79,8 +76,7 @@ const teamGenerator = team => {
 
 
 module.exports = team => {
-    return 
-    `
+    return `
     <!DOCTYPE html>
     <html lang="en">
 

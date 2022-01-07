@@ -1,10 +1,14 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
+const path = require("path");
 
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
-const teamGenerator = require("./src/teamGenerator");
+const teamGenerator = require("./src/teamGenerator.js");
+
+const DIST_DIR = path.resolve(__dirname, "dist");
+const distPath = path.join(DIST_DIR, "teampage.html");
 
 let employees = [];
 
@@ -146,9 +150,8 @@ function creationMenu(){
     }
 
     function generateTeamPage(){
-        fs.writeFileSync("./dist/teampage.html", teamGenerator(employees), 'utf-8');
+        fs.writeFileSync(distPath, teamGenerator(employees), 'utf-8');
     }
-
     createManager();
 }
 
