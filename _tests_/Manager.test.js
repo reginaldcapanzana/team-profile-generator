@@ -10,13 +10,13 @@ test("Can instantiate manager with constructor arguements", () =>{
 });
 
 test("Can get office number via getOfficeNumber()", () => {
-    const manager = new manager("Reggie", 1, "reggie@reggie.com", 111);
+    const manager = new Manager("Reggie", 1, "reggie@reggie.com", 111);
 
     expect(manager.getOfficeNumber()).toBe(111);
 });
 
 test("Can get role via getRole()", () => {
-    const manager = new manager("Reggie", 1, "reggie@reggie.com", 111);
+    const manager = new Manager("Reggie", 1, "reggie@reggie.com", 111);
 
     expect(manager.getRole()).toBe("Manager");
 });
